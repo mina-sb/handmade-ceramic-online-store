@@ -24,7 +24,7 @@
     flex-wrap: wrap;
 }
 .contact-socailmedia{
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 2rem;
     flex: 0 0 100%;
@@ -118,5 +118,8 @@ margin-left: 0;
 
         flex: 0 0 35%;
 
+    }
+    .contact-socailmedia{
+        display: flex;
     }
 }

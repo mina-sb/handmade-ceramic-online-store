@@ -36,8 +36,9 @@ transition: all 1s;
 }
 .who-we-are-info{
     flex: 0 0 50%;
-    padding: 0rem 2rem;
+    padding: 0rem 0rem;
     box-sizing: border-box;
+  text-align: justify;
 }
 .info-h3{
     font-size: 2.6rem;
@@ -191,6 +192,11 @@ transition: all 1s;
             overflow: hidden;
             position: relative;
             transform: all 2s
+        }
+        .who-we-are-info{
+            flex: 0 0 50%;
+            padding: 0rem 2rem;
+            box-sizing: border-box;
         }
 }
 @media screen and (min-width:900px) {
