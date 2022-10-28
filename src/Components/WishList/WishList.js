@@ -31,11 +31,11 @@ const WishList = () => {
           <Products limit={wishlist.length} />
         </div>
       ) : (
-        <div className="empty">
+        <div className="empty-wishlist">
           <span className="empty-cart-span">YOUR WISH LIST IS EMPTY</span>
           <br />
           <a
-            className="empty-cart-btn"
+            className="empty-cart-btn wishlist-btn"
             onClick={() => {
               navigate("/");
             }}

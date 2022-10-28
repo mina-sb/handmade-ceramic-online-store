@@ -10,7 +10,7 @@ const Login = () => {
   return (
     <div className={`form ${showForm ? "form-show" : ""}`}>
       {register == 1 ? (
-        <div className="container">
+        <div className="login-container">
           <h3 className="form-title">LOGIN</h3>
           <hr className="hr" />
           <h4 className="form-sub-title">Great to have you back!</h4>
@@ -27,7 +27,7 @@ const Login = () => {
           </a>
         </div>
       ) : register == 2 ? (
-        <div className="container">
+        <div className="login-container">
           <h3 className="form-title">REGISTER</h3>
           <hr className="hr" />
           <h4 className="form-sub-title">We Are Happy To See You!</h4>
@@ -40,7 +40,7 @@ const Login = () => {
           </a>
         </div>
       ) : (
-        <div className="container">
+        <div className="login-container">
           <h3 className="form-title">PASSWORD RESET</h3>
           <hr className="hr" />
           <h4 className="form-sub-title">We Help You Back!</h4>

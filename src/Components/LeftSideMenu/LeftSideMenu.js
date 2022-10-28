@@ -43,7 +43,7 @@ const LeftSideMenu = () => {
           <li>
             <Link to="/wishlist" onClick={closeCart}>
               <div className="menu-item">
-                <a>RETURN</a>
+                <a>WISH LIST</a>
                 <BsChevronRight />
               </div>
             </Link>

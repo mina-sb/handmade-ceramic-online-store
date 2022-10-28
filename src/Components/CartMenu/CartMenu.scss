@@ -20,7 +20,7 @@
 }
 .badge{
     position: absolute;
-    top:1.7rem;
+    top:0.9rem;
     right: 3.5rem;
     padding: 0.1rem 0.4rem 0.1rem 0.5rem;
     background-color: $cream;
@@ -29,5 +29,7 @@
     font-size: 0.8rem;
 }
 @media screen and (min-width : 720px) {
-    
+    .badge{
+        top:1.7rem;
+    }
 }

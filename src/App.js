@@ -40,6 +40,7 @@ function App() {
       <MainNav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/online-store" element={<Home />} />
         <Route path="/detail/:id" element={<Detail />} />
         <Route path="/search" element={<SearchResults />} />
         <Route path="/about" element={<AboutUs />} />

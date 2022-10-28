@@ -22,6 +22,7 @@ const Detail = () => {
   const [totalPrice, setTotalPrice] = cartTotalPrice;
   const [cartState, setCartState] = showCart;
   const [backdropState, setbackdropState] = backdrop;
+  const [category, setCategory] = useState("");
 
   const [tab, setTab] = useState(0);
   const [product, setProduct] = useState({});
@@ -40,7 +41,11 @@ const Detail = () => {
     const data = await res.json();
     setProduct(data);
   };
-
+  useEffect(() => {
+    if (product.category) {
+      setCategory(product.category.name);
+    }
+  }, [product]);
   useEffect(() => {
     getProduct();
   }, []);
@@ -159,7 +164,7 @@ const Detail = () => {
             <span>ADD TO WISHLIST</span>
           </div>
           <div className="categories">
-            <span className="cat-title">Categories :</span>
+            <span className="cat-title">Categories :{category}</span>
           </div>
           <div className="share">
             <span className="share-title">SHARE :</span>

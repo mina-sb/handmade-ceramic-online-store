@@ -52,10 +52,24 @@
 .menu-item a{
     font-weight: 200;
 }
+
+ 
+  /* visited link */
+  a:visited {
+    color: $darkGray;
+  }
+  
+  /* mouse over link */
+  .menu-item a:hover {
+    color: $cream;
+  }
+  
 .menu-item a:active{
     font-weight: 200;
     color: $cream;
 }
+
+
 .close-leftMenu{
     width: 100%;
     background-color: $cream;

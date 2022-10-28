@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./Product.scss";
-import { VscPaintcan } from "react-icons/vsc";
 import { FiShoppingCart } from "react-icons/fi";
 import { AppContext } from "../../AppContext";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,6 +8,7 @@ import QuickView from "../QuickView/QuickView";
 import { IconName } from "react-icons/gr";
 import useWindowDimensions from "../../useWindowDimensions";
 import { SaveToLocal } from "../../LocalStorageFunctions";
+import { AiFillEye } from "react-icons/ai";
 
 const Product = ({ id, firstImg, title, price }) => {
   const {
@@ -115,7 +115,7 @@ const Product = ({ id, firstImg, title, price }) => {
           )}
         </div>
         <div className="item">
-          <VscPaintcan className="quick-view-btn" onClick={addToQuickview} />
+          <AiFillEye className="quick-view-btn" onClick={addToQuickview} />
           <span className="tooltip">quick view</span>
         </div>
       </div>
