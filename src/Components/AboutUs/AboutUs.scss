@@ -22,6 +22,7 @@
 }
 .who-we-are{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 4rem 2rem;
 }
@@ -35,8 +36,7 @@ transition: all 1s;
 }
 .who-we-are-info{
     flex: 0 0 50%;
-
-    padding: 4rem 2rem;
+    padding: 0rem 2rem;
     box-sizing: border-box;
 }
 .info-h3{
@@ -44,6 +44,7 @@ transition: all 1s;
     font-weight: 200;
     color: $darkGray;
     margin-block-end: 0em;
+    margin-block-start: 1em;
 }
 .info-h4{
     font-size: 1.2rem;
@@ -61,17 +62,18 @@ transition: all 1s;
 }
 .reasons{
     background: url('https://cdn.shopify.com/s/files/1/0304/5739/7386/files/bg_about.jpg?v=1613680646') center;
-    height: 29rem;
+    height: 40rem;
 }
 .reasons-h2{
     text-align: center;
     color: $white;
-    padding-top: 5rem;
+    padding-top: 2rem;
     font-weight: 200;
     font-size: 2.6rem;
 }
 .reason-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 3.5rem;
 }
@@ -124,10 +126,10 @@ transition: all 1s;
 }
 .instagram-posts{
     display: flex;
-
+    flex-wrap: wrap;
 }
 .instagram-post{
-    flex: 0 0 25%;
+    flex: 0 0 50%;
     overflow: hidden;
     position: relative;
     transform: all 2s
@@ -165,4 +167,43 @@ transition: all 1s;
     font-weight: 500;
     color: $white;
     cursor: pointer;
+}
+
+@media screen and (min-width:550px) {
+    .who-we-are{
+        flex-direction: row;
+    }
+    .reason-container{
+        display: flex;
+        flex-direction: row;}
+        .reasons{
+            height: 29rem;
+        }
+        .reasons-h2{
+            padding-top: 5rem;
+        }
+        .instagram-posts{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .instagram-post{
+            flex: 0 0 25%;
+            overflow: hidden;
+            position: relative;
+            transform: all 2s
+        }
+}
+@media screen and (min-width:900px) {
+    .who-we-are-info{
+        flex: 0 0 50%;
+        padding: 4rem 2rem;
+        box-sizing: border-box;
+    }
+    .info-h3{
+        font-size: 2.6rem;
+        font-weight: 200;
+        color: $darkGray;
+        margin-block-end: 0em;
+
+    }
 }
