@@ -27,10 +27,11 @@ const Products = (props) => {
     setSource(data);
 
     // fetch("https://fakestoreapi.com/products")
-    // .then((res) => res.json())
-    // .then((data) => {
-    //  setProducts(data);
-    // });
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     setProducts(data);
+    //     setSource(data);
+    //   });
   };
 
   useEffect(() => {
@@ -42,7 +43,7 @@ const Products = (props) => {
   }, [searchResult, showSearchResults, wishlist]);
 
   return (
-    <div className="products">
+    <div className="products" id="shop">
       <div className="products-list">
         {source.length > 0
           ? source.map((item, index) => (
@@ -51,6 +52,7 @@ const Products = (props) => {
                 id={item.id}
                 firstImg={item.images[0]}
                 secondImg={item.images[1]}
+                //firstImg={item.image}
                 title={item.title}
                 price={item.price}
               />
