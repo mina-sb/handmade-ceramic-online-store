@@ -49,9 +49,9 @@ const Admin = () => {
           {tab == 0 ? (
             <AddProduct />
           ) : tab == 1 ? (
-            "update component"
+            "Under Construction"
           ) : tab == 2 ? (
-            "delete component"
+            "Under Construction"
           ) : (
             ""
           )}

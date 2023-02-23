@@ -169,7 +169,9 @@ transition: all 1s;
     color: $white;
     cursor: pointer;
 }
-
+.margin-top{
+    margin-top: 1rem;
+}
 @media screen and (min-width:550px) {
     .who-we-are{
         flex-direction: row;

@@ -41,7 +41,6 @@ const MainNav = () => {
         <li>
           <Link to="/about">About Us</Link>
         </li>
-        <li className={flag ? "responsive" : ""}>Shop</li>
         <li>
           <Link to="/wishlist">Wishlist</Link>
         </li>

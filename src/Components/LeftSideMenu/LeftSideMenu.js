@@ -35,12 +35,6 @@ const LeftSideMenu = () => {
             </Link>
           </li>
           <li>
-            <div className="menu-item">
-              <a>SHOP</a>
-              <BsChevronRight />
-            </div>
-          </li>
-          <li>
             <Link to="/wishlist" onClick={closeCart}>
               <div className="menu-item">
                 <a>WISH LIST</a>
@@ -60,6 +54,14 @@ const LeftSideMenu = () => {
             <Link onClick={closeCart} to="/contact">
               <div className="menu-item">
                 <a>CONTACT US</a>
+                <BsChevronRight />
+              </div>
+            </Link>
+          </li>
+          <li>
+            <Link to="/admin" onClick={closeCart}>
+              <div className="menu-item">
+                <a>Admin</a>
                 <BsChevronRight />
               </div>
             </Link>

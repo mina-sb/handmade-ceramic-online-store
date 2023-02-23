@@ -35,13 +35,13 @@ const AboutUs = () => {
             <h4 className="reason-h4">FREE SHIPPING & RETURN</h4>
             <p className="reason-p">On in-stock items ordered by 5:00 p.m.</p>
           </div>
-          <div className="reason border-right">
+          <div className="reason margin-top border-right">
             <BsShop className="reason-icon" />
             <h4 className="reason-h4">FREE SHIPPING & RETURN</h4>
             <p className="reason-p">On in-stock items ordered by 5:00 p.m.</p>
           </div>
           <div className="reason">
-            <BsTruck className="reason-icon" />
+            <BsTruck className="reason-icon margin-top" />
             <h4 className="reason-h4">FREE SHIPPING & RETURN</h4>
             <p className="reason-p">On in-stock items ordered by 5:00 p.m.</p>
           </div>
