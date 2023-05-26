@@ -5,3 +5,7 @@ The website displays products. Users can add and remove products to/from their c
 it is responsive and mobile first design. 
 
 
+
+
+https://github.com/mina-sb/online-store/assets/110327510/efc27214-a7e5-4e24-9c25-e71901c970bb
+
