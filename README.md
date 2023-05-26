@@ -9,3 +9,7 @@ it is responsive and mobile first design.
 
 https://github.com/mina-sb/online-store/assets/110327510/efc27214-a7e5-4e24-9c25-e71901c970bb
 
+
+
+https://github.com/mina-sb/online-store/assets/110327510/5d6807a6-a869-4ac7-ab9c-f6da2fb49b9f
+
