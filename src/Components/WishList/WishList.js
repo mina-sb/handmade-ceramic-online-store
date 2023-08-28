@@ -25,7 +25,7 @@ const WishList = () => {
       <div className="cart-detail-header">
         <h3 className="cart-h3"> WishList</h3>
         <span className="cart-span">
-          HOM - YOUR List of your Favorite items{" "}
+          HOME - YOUR List of your Favorite items{" "}
         </span>
       </div>
       {wishlist.length > 0 ? (

@@ -7,7 +7,7 @@ const ContactUS = () => {
     <div>
       <div className="contact-header">
         <h3 className="contact-h3">Contact Us</h3>
-        <span className="contact-span"> HOM - Contact us</span>
+        <span className="contact-span"> Home- Contact us</span>
       </div>
       <div className="contact-container">
         <div className="contact-socailmedia">
