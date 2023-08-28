@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/handmade-ceramic-online-store/static/css/main.bd0db1f4.css",
+    "main.js": "/handmade-ceramic-online-store/static/js/main.36fed5f5.js",
+    "static/js/787.a92fe09e.chunk.js": "/handmade-ceramic-online-store/static/js/787.a92fe09e.chunk.js",
+    "static/media/Dosis-SemiBold.ttf": "/handmade-ceramic-online-store/static/media/Dosis-SemiBold.3580e72c820988314c09.ttf",
+    "static/media/Dosis-Medium.ttf": "/handmade-ceramic-online-store/static/media/Dosis-Medium.50346366837ca02cca28.ttf",
+    "static/media/Dosis-Light.ttf": "/handmade-ceramic-online-store/static/media/Dosis-Light.02196afb942a805677d9.ttf",
+    "static/media/Dosis-ExtraLight.ttf": "/handmade-ceramic-online-store/static/media/Dosis-ExtraLight.f77af4d63d20e43b655f.ttf",
+    "static/media/Dosis-Bold.ttf": "/handmade-ceramic-online-store/static/media/Dosis-Bold.da853f581cae1859ee0a.ttf",
+    "static/media/Dosis-Book.ttf": "/handmade-ceramic-online-store/static/media/Dosis-Book.d4d759f9f74aff4a7a60.ttf",
+    "index.html": "/handmade-ceramic-online-store/index.html",
+    "main.bd0db1f4.css.map": "/handmade-ceramic-online-store/static/css/main.bd0db1f4.css.map",
+    "main.36fed5f5.js.map": "/handmade-ceramic-online-store/static/js/main.36fed5f5.js.map",
+    "787.a92fe09e.chunk.js.map": "/handmade-ceramic-online-store/static/js/787.a92fe09e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd0db1f4.css",
+    "static/js/main.36fed5f5.js"
+  ]
+}
