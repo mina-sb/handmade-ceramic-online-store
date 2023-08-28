@@ -44,6 +44,11 @@ const Detail = () => {
     setProduct(data.product);
   };
   useEffect(() => {
+
+    
+      window.scrollTo(0, 0);
+    
+
     if (product.category) {
       setCategory(product.category);
     }

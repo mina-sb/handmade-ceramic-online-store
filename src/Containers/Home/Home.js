@@ -14,6 +14,7 @@ const Home = () => {
   const location = useLocation();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     if (location.pathname === "/detail") {
       setNavBg(true);
     }
@@ -21,6 +22,10 @@ const Home = () => {
       setShowSearchResults(false);
     }
   }, []);
+
+
+    
+    
 
   return (
     <div className="home">
