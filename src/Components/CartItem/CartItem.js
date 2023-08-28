@@ -36,8 +36,9 @@ const CartItem = (props) => {
         tempCart.splice(productIndex, 1);
         setCart(tempCart);
         setTotalPrice(0);
+        console.log(cart)
       }
-      SaveToLocal(cart);
+      SaveToLocal(tempCart);
     }
   };
 
