@@ -52,9 +52,12 @@ const AddProduct = () => {
     };
   }, [status]);
   const getCategories = async () => {
-    const res = await fetch("https://api.escuelajs.co/api/v1/categories");
+    const res = await fetch(
+      "https://places.iran.liara.run/api/products/categories/categories"
+    );
     const data = await res.json();
-    setCategoryList(data);
+    setCategoryList(data.categories);
+    console.log(data.categories)
   };
   useEffect(() => {
     getCategories();
@@ -120,7 +123,7 @@ const AddProduct = () => {
           }}
         >
           {categoryList.map((item) => {
-            return <option value={item.id}>{item.name}</option>;
+            return <option value={item.id}>{item.categoryName}</option>;
           })}
         </select>
         <br />
