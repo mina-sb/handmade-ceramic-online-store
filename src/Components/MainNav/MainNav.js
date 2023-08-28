@@ -12,6 +12,12 @@ const MainNav = () => {
   const [navBg, setNavBg] = navColor;
   const [leftmenu, setLeftmenu] = leftmenuState;
   const [backdropState, setbackdropState] = backdrop;
+ const { wishlistContext, searchResultArray, showSearchResultsFlag } =
+   useContext(AppContext);
+ const [wishlist, setWishlist] = wishlistContext;
+ const [searchResult, setSearchResult] = searchResultArray;
+ const [showSearchResults, setShowSearchResults] = showSearchResultsFlag;
+
 
   const showMenu = () => {
     setFlag(!flag);
@@ -27,7 +33,11 @@ const MainNav = () => {
   const changeNavColorDetail = () => {
     setNavBg(false);
   };
+  const wishlistHandler = () => {
+     setSearchResult(wishlist);
+     setShowSearchResults(true);
 
+};
   const main = {};
   return (
     <div className={`main-nav ${navBg ? "bg-g" : "bg-w"}`}>
@@ -42,7 +52,9 @@ const MainNav = () => {
           <Link to="/about">About Us</Link>
         </li>
         <li>
-          <Link to="/wishlist">Wishlist</Link>
+          <Link to="/wishlist" onClick={wishlistHandler}>
+            Wishlist
+          </Link>
         </li>
         <li>
           <Link to="/contact">Contact Us</Link>

@@ -60,7 +60,6 @@ const AddProduct = () => {
     getCategories();
   }, []);
   useEffect(() => {
-    console.log(images);
   }, [images]);
 
   const priceValidation = (e) => {
@@ -152,7 +151,6 @@ const AddProduct = () => {
               <span>{item.name}</span>
               <AiFillDelete
                 onClick={() => {
-                  console.log(index);
                   removeFile(index);
                 }}
                 className="remove-item"

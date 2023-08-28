@@ -15,7 +15,6 @@ const UpdateComponent = () => {
       }),
     });
     const content = await res.json();
-    console.log(res.status);
   };
 
   return (

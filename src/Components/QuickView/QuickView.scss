@@ -25,7 +25,13 @@
     display: flex;
     flex-direction: column;
 }
-
+.current-img{
+    height: 250px;
+}
+.tumbnail{
+    height: 72px;
+    object-fit: cover;
+}
 .quick-view-img{
     flex : 0 0 50%;
     display: flex;

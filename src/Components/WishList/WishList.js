@@ -14,8 +14,10 @@ const WishList = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+        setSearchResult(wishlist);
     setShowSearchResults(true);
-    setSearchResult(wishlist);
+
+
   }, [wishlist]);
 
   return (

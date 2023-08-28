@@ -15,6 +15,8 @@ const QuickView = () => {
   const [counter, setCounter] = useState(0);
   const [localFlag, setLocalFlag] = useState(false);
 
+ 
+
   const addToCart = () => {
     if (counter > 0) {
       const productIndex = cart.findIndex(
@@ -56,16 +58,20 @@ const QuickView = () => {
   return (
     <div
       className={
-        selectedProduct.id > -1 ? "quick-view quick-view-show" : "quick-view"
+        selectedProduct.id !== -1 ? "quick-view quick-view-show" : "quick-view"
       }
     >
       {selectedProduct.images && selectedProduct.images.length > 0 ? (
         <div className="quick-view-container">
           <div className="quick-view-img">
-            <img src={selectedProduct.images[currentImg]} />
+            <img
+              className="current-img"
+              src={selectedProduct.images[currentImg]}
+            />
             <div className="thumbnail-container">
               <div>
                 <img
+                  className="tumbnail"
                   src={selectedProduct.images[0]}
                   onClick={() => {
                     setCurrentImg(0);
@@ -74,6 +80,7 @@ const QuickView = () => {
               </div>
               <div>
                 <img
+                  className="tumbnail"
                   src={selectedProduct.images[1]}
                   onClick={() => {
                     setCurrentImg(1);
@@ -82,6 +89,7 @@ const QuickView = () => {
               </div>
               <div>
                 <img
+                  className="tumbnail"
                   src={selectedProduct.images[2]}
                   onClick={() => {
                     setCurrentImg(2);

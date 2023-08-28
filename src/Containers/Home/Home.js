@@ -26,7 +26,7 @@ const Home = () => {
     <div className="home">
       <Banner />
       <Features />
-      <h3 className="home-h3">FERNITURE</h3>
+      <h3 className="home-h3">PRODUCTS</h3>
       <Products limit={28} />
       <OfferProduct />
     </div>

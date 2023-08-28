@@ -37,13 +37,15 @@ const Detail = () => {
   }
 
   const getProduct = async () => {
-    const res = await fetch(`https://api.escuelajs.co/api/v1/products/${id}`);
+    const res = await fetch(
+      `https://places.iran.liara.run/api/products/${id}`
+    );
     const data = await res.json();
-    setProduct(data);
+    setProduct(data.product);
   };
   useEffect(() => {
     if (product.category) {
-      setCategory(product.category.name);
+      setCategory(product.category);
     }
   }, [product]);
   useEffect(() => {

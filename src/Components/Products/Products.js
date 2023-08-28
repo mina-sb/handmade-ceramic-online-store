@@ -19,28 +19,37 @@ const Products = (props) => {
   const [source, setSource] = useState([]);
 
   const getData = async () => {
-    const res = await fetch(
+    /*    const res = await fetch(
       `https://api.escuelajs.co/api/v1/products?limit=${props.limit}&offset=54`
     );
     const data = await res.json();
     setProducts(data);
-    setSource(data);
+    setSource(data);  */
 
-    // fetch("https://fakestoreapi.com/products")
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     setProducts(data);
-    //     setSource(data);
-    //   });
+    
+/* 
+    fetch("https://fakestoreapi.com/products")
+       .then((res) => res.json())
+       .then((data) => {
+         setProducts(data);
+         setSource(data);
+       });   */
+   
+    
+    const res = await fetch(`https://places.iran.liara.run/api/products`);
+    const data = await res.json();
+    setProducts(data.products);
+    setSource(data.products); 
+
   };
 
   useEffect(() => {
-    if (!showSearchResults) {
+    if(!showSearchResults) {
       getData();
     } else {
       setSource(searchResult);
     }
-  }, [searchResult, showSearchResults, wishlist]);
+  }, [searchResult, showSearchResults, wishlist ]);
 
   return (
     <div className="products" id="shop">

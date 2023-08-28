@@ -59,18 +59,19 @@ const Product = ({ id, firstImg, title, price }) => {
     const productExist = wishlist.findIndex((item) => item.id == id);
     if (wished < 0) {
       const productIndex = products.findIndex((item) => item.id == id);
-      setWishlist([...wishlist, products[productIndex]]);
+      setWishlist([ ...wishlist, products[ productIndex ] ]);
       setWished(0);
     } else {
       setWished(-1);
       let temp = wishlist;
       temp.splice(productExist, 1);
-      setWishlist([...temp]);
+      setWishlist([ ...temp ]);
     }
   };
 
   const addToQuickview = () => {
-    if (width > 700) {
+    if(width > 700) {
+     
       const product = products.filter((item) => {
         return item.id === id;
       });
@@ -82,7 +83,10 @@ const Product = ({ id, firstImg, title, price }) => {
   };
 
   useEffect(() => {
-    setWished(wishlist.findIndex((item) => item.id == id));
+    setWished(wishlist.findIndex((item) => {
+      return item.id == id;
+    }));
+
   }, []);
 
   useEffect(() => {
